@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#pricipal{
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho" "menu menu" "conteudo lateral" "rodape rodape";
+    grid-template-rows: 15vh 10vh 55vh 20vh;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background: red;
+}
+
+.menu{
+    grid-area: menu;
+    background: green;
+}
+
+.conteudo{
+    grid-area: conteudo;
+    background: blue;
+}
+
+.lateral{
+    grid-area: lateral;
+    background: yellow;
+}
+
+.rodape{
+    grid-area: rodape;
+    background: lime;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background: #cdcdcd;
+    }
+
+    #principal{
+        grid-template-areas: "cabecalho" "menu" "conteudo" "lateral" "rodape" ;
+    }
+}
